@@ -9,7 +9,7 @@ It is not a diagnostic system, medical device, prescribing tool, or replacement 
 ## What is included
 
 - `app.py`: Streamlit interface with an assessment screen and a report screen.
-- `babycare_agentic_rag.ipynb`: executed notebook covering ingestion, retrieval, safety rules, three demonstration cases, follow-up updates, and audit assertions.
+- `babycare_agentic_rag.ipynb`: workflow notebook covering ingestion, retrieval, safety rules, three demonstration cases, follow-up updates, and audit assertions.
 - `babycare_engine.py`: shared engine used by both the app and the notebook.
 - `data/sources.csv`: configured source manifest.
 - `data/diseases.csv`: hand-compiled disease and symptom graph.
@@ -44,7 +44,7 @@ Run the app:
 python -m streamlit run app.py
 ```
 
-Open the provided local URL. On first use, select **Download / refresh and index documents** in the sidebar. The initial index build can take about 30 to 60 seconds for the included corpus.
+Open the provided local URL. On first use, select **Download / refresh and index documents** in the sidebar. The initial index build can take about 30 to 60 seconds after documents are downloaded.
 
 Open `babycare_agentic_rag.ipynb` in your Jupyter environment (JupyterLab, Jupyter Notebook, or VS Code). The notebook is provided without saved outputs. Running it will reuse cached downloads, rebuild the index, run the demonstration cases, and write Markdown examples to `data/demo_reports/`.
 
